@@ -1,12 +1,42 @@
 {
+  "id": "/",
   "name": "Grammar Journey",
   "short_name": "Grammar",
-  "description": "Personal English grammar learning for a global career.",
+  "description": "Learn English grammar step by step: 56 short lessons and 1,100+ varied practice questions. Works offline.",
+  "lang": "en",
+  "dir": "ltr",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f7faf8",
+  "background_color": "#f5f9f8",
   "theme_color": "#0f766e",
+  "categories": [
+    "education"
+  ],
   "icons": [
-    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }

@@ -85,6 +85,15 @@ Mixed memakai komposisi `MIXED_PLAN` (4/3/3/3/2). Skor terbaik tiap kartu disimp
 dan sesi yang belum selesai bisa dilanjutkan lewat banner Resume. Soal ketik dan susun kata sengaja dibatasi
 agar tidak menyalahkan jawaban lain yang sama-sama benar (mis. sinonim). Kesalahan semua jenis masuk ke Review.
 
+## Deploy ke Vercel
+
+Situs statis tanpa build. `vercel.json` di root sudah mengatur `outputDirectory: "dist"`, jadi di Vercel cukup:
+**Add New → Project → pilih repo → Deploy** (tanpa mengubah Framework/Build Command). Vercel memberi HTTPS, yang diwajibkan PWA.
+
+PWA: manifest (`dist/manifest.webmanifest`), ikon PNG 192/512 + maskable + apple-touch-icon + favicon (`dist/assets/icons/`),
+service worker offline. Setelah punya domain, ubah `og:image` di `index.html` menjadi URL absolut
+(mis. `https://domainmu.vercel.app/assets/icons/og-image.png`) agar pratinjau tautan tampil di WhatsApp/Telegram.
+
 ## Catatan
 
 - Kunci jawaban kuis dibuat dari latihan buku (buku tidak menyediakan kunci). Laporkan jika ada yang keliru.
