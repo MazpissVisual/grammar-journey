@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="description" content="A personal grammar learning journey for a global career." />
+    <title>Grammar Journey</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <button class="brand" data-view="dashboard" aria-label="Grammar Journey home">
+          <span class="brand-mark">G<span>J</span></span>
+          <span class="brand-copy"><strong>Grammar Journey</strong><small>Build your global voice.</small></span>
+        </button>
+
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span><span>Home</span></button>
+          <button class="nav-item" data-view="learn"><span class="nav-icon">◇</span><span>Learn</span></button>
+          <button class="nav-item" data-view="practice"><span class="nav-icon">✓</span><span>Practice</span></button>
+          <button class="nav-item" data-view="review"><span class="nav-icon">↻</span><span>Review</span><span class="nav-badge" id="reviewBadge">0</span></button>
+          <button class="nav-item" data-view="progress"><span class="nav-icon">↗</span><span>Progress</span></button>
+        </nav>
+
+        <div class="sidebar-card">
+          <span class="eyebrow">CURRENT PATH</span>
+          <strong>Book 1 · Foundation</strong>
+          <div class="mini-progress"><span id="sideProgress"></span></div>
+          <small id="sideProgressText">0 of 42 lessons</small>
+        </div>
+
+        <button class="profile-card" id="profileButton">
+          <span class="avatar">HI</span>
+          <span><strong>Havidz</strong><small>Global learner</small></span>
+          <span class="profile-more">•••</span>
+        </button>
+      </aside>
+
+      <main class="main-content">
+        <header class="mobile-header">
+          <button class="brand compact" data-view="dashboard"><span class="brand-mark">G<span>J</span></span><strong>Grammar Journey</strong></button>
+          <button class="icon-button" id="mobileProfile" aria-label="Open profile">HI</button>
+        </header>
+        <div id="app" class="view-container" aria-live="polite"></div>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Mobile navigation">
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-view="learn"><span class="nav-icon">◇</span><span>Learn</span></button>
+        <button class="nav-item" data-view="practice"><span class="nav-icon">✓</span><span>Practice</span></button>
+        <button class="nav-item" data-view="review"><span class="nav-icon">↻</span><span>Review</span></button>
+        <button class="nav-item" data-view="progress"><span class="nav-icon">↗</span><span>Progress</span></button>
+      </nav>
+    </div>
+
+    <dialog id="settingsDialog" class="settings-dialog">
+      <form method="dialog">
+        <div class="dialog-head"><div><span class="eyebrow">PERSONAL SETTINGS</span><h2>Your learning space</h2></div><button class="close-button" value="cancel" aria-label="Close">×</button></div>
+        <label>Display name<input id="nameInput" maxlength="24" value="Havidz" /></label>
+        <label>Daily lesson goal<select id="goalInput"><option value="1">1 lesson</option><option value="2">2 lessons</option><option value="3">3 lessons</option></select></label>
+        <label>Beginner Assist<select id="beginnerInput"><option value="true">On — tampilkan bantuan Indonesia</option><option value="false">Off — English only</option></select></label>
+        <div class="dialog-actions"><button class="button ghost" type="button" id="resetButton">Reset progress</button><button class="button primary" value="save" id="saveSettings">Save changes</button></div>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status"></div>
+    <script src="js/modules.js"></script>
+    <script src="content/01-parts-of-speech.js"></script>
+    <script src="content/02-nouns.js"></script>
+    <script src="content/03-pronouns.js"></script>
+    <script src="content/04-verbs.js"></script>
+    <script src="content/05-adjectives.js"></script>
+    <script src="content/06-adverbs.js"></script>
+    <script src="content/07-prepositions.js"></script>
+    <script src="content/08-conjunctions.js"></script>
+    <script src="content/09-countable.js"></script>
+    <script src="content/10-gender.js"></script>
+    <script src="content/11-number.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

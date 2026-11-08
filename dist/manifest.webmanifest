@@ -1,0 +1,12 @@
+{
+  "name": "Grammar Journey",
+  "short_name": "Grammar",
+  "description": "Personal English grammar learning for a global career.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
