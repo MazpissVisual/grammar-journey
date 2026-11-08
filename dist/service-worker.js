@@ -2,7 +2,7 @@
 //  - file dilayani dari cache (cepat, bisa offline), lalu diam-diam diperbarui dari jaringan;
 //  - perubahan file muncul pada pembukaan berikutnya, TANPA perlu menaikkan versi CACHE.
 // Naikkan CACHE hanya jika daftar ASSETS berubah (file ditambah/dihapus/diganti nama).
-const CACHE = "grammar-journey-v7";
+const CACHE = "grammar-journey-v10";
 const ASSETS = [
   "./",
   "./index.html",
@@ -20,6 +20,8 @@ const ASSETS = [
   "./content/10-gender.js",
   "./content/11-number.js",
   "./js/app.js",
+  "./js/questions.js",
+  "./js/practice.js",
   "./manifest.webmanifest",
   "./assets/favicon.svg"
 ];
